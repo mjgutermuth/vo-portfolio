@@ -14,10 +14,10 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+header h6 {
     margin: 0;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .navbar-nav .nav-link {
@@ -97,17 +97,51 @@ footer {
     background-color: #F5A442 !important;
 }
 
+.extra-space {
+    margin-bottom: 30px;
+}
+
 .container-custom {
     max-width: 800px;
 }
 
-.img-container {
+
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    height: 100%;
 }
 
-.img-container img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    color: #FFA726;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #777;
+}
+
+.btn {
+    margin-top: auto; /* Ensure button stays at the bottom */
+}
+
+.mb-3 {
+    margin-bottom: 0.5rem !important; /* Adjust the margin between title and author */
+}
+
+.mb-row {
+    margin-bottom: 30px; /* Adjust the value to your preferred spacing */
 }

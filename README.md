@@ -1,2 +1,2 @@
-# portfolio
-A portfolio site for my voiceover and technical writing work
+# vo-portfolio
+A portfolio site for my voiceover work

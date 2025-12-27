@@ -2,69 +2,306 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Melinda Christie - Voice Actor with a warm, cheerful tone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melinda Christie - Voice Actor - Coming Soon">
     <title>Melinda Christie - Voice Actor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Comfortaa&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: white;
+            color: #2e2e2e;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-box {
+            background: white;
+            border: 3px solid #ff1493;
+            padding: 60px 40px;
+            margin-bottom: 30px;
+        }
+
+        .headshot {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #ff1493;
+            margin: 0 auto 30px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ff1493;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 50px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            text-transform: lowercase;
+        }
+
+        .status {
+            background: #9370db;
+            color: white;
+            padding: 18px 35px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 35px;
+            display: inline-block;
+            border: none;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .credentials-box {
+            background: white;
+            border: 3px solid #20b2aa;
+            padding: 45px 40px;
+            margin-bottom: 30px;
+        }
+
+        .credentials-title {
+            font-size: 1rem;
+            color: #20b2aa;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .credential-item {
+            background: #fafafa;
+            border: 2px solid #e0e0e0;
+            padding: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .credential-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .credential-label {
+            color: #2e2e2e;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .credential-details {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .audio-player {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border: 2px solid #ff1493;
+        }
+
+        .audio-player-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        audio {
+            width: 100%;
+            height: 40px;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #fafafa;
+        }
+
+        .credential-item a {
+            color: #ff1493;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .credential-item a:hover {
+            text-decoration: underline;
+        }
+
+        .social-box {
+            background: white;
+            border: 3px solid #ff1493;
+            padding: 35px;
+        }
+
+        .social-title {
+            font-size: 1rem;
+            color: #ff1493;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .instagram-link {
+            display: inline-block;
+            background: #ff1493;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 3px solid #ff1493;
+        }
+
+        .instagram-link:hover {
+            background: white;
+            color: #ff1493;
+        }
+
+        @media (max-width: 768px) {
+            .headshot {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .main-box {
+                padding: 40px 25px;
+            }
+
+            .credentials-box {
+                padding: 30px 25px;
+            }
+
+            .credential-item {
+                padding: 20px;
+            }
+
+            .social-box {
+                padding: 30px 25px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <div class="container">
-                <div class="text-left">
-                    <h1 class="navbar-brand mb-0">melinda christie</h1>
-                    <h6 class="tagline">voice artist with a warm, cheerful tone</h6>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                                <a class="dropdown-item" href="voice.html">Voice Acting</a>
-                                <a class="dropdown-item" href="writing.html">Technical Writing</a>
-                                <a class="dropdown-item" href="combined.html">Combined Projects</a>
-                                <a class="dropdown-item" href="https://melimuth.fun/colors" target="_blank" rel="noopener">
-                                    Color Investigator
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="main-box">
+            <img src="https://vo-portfolio.s3.us-east-2.amazonaws.com/LK1_3046.jpg" alt="Melinda Christie headshot" class="headshot">
+            
+            <h1>MELINDA CHRISTIE</h1>
+            <p class="tagline">voice artist with a warm, cheerful tone</p>
+            
+            <div class="status">🎙️ LAUNCHING EARLY 2026</div>
+            
+            <p class="description">
+                Professional voice acting portfolio site coming soon. Currently in training 
+                and preparing professional demos for commercial, narration, and character work.
+            </p>
+        </div>
 
-    <main id="about" class="container my-5">
-        <div class="row align-items-stretch">
-            <div class="col-md-4 img-container">
-                <img src="https://vo-portfolio.s3.us-east-2.amazonaws.com/DSCF8969.jpg" alt="melinda christie headshot photo" class="img-fluid img-match-height rounded">
+        <div class="credentials-box">
+            <div class="credentials-title">Current Work</div>
+            
+            <div class="credential-item">
+                <span class="credential-label">Commercial Work</span>
+                <div class="credential-details">Spotify ads for Babalu podcast</div>
+                
+                <div class="audio-player">
+                    <div class="audio-player-label">Ad Version 1</div>
+                    <audio controls>
+                        <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player">
+                    <div class="audio-player-label">Ad Version 2</div>
+                    <audio controls>
+                        <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO+v2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <a href="https://www.uneasytiger.com/projects/babalu" target="_blank" rel="noopener">About Babalu Podcast →</a>
             </div>
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <h2>About</h2>
-                <p>Melinda Christie is a versatile voice actor and technical writer based in the San Francisco Bay Area. With a dynamic range and a knack for bringing characters to life, Melinda delivers engaging performances across multiple voiceover genres.</p>
-                <p>As a voice actor, Melinda is known for bringing a blend of youthful maturity and relatable warmth to any project. Colleagues and mentors have compared her conversational tone to a dependable big sister, combining infectious energy with a relaxed confidence.</p>
-                <p>Melinda's voiceover is further enhanced by her background in technical writing for leading software companies. She excels at making complex information accessible, both behind the mic and on the page. Melinda often combines her skills to offer end-to-end solutions, from script development to final VO delivery.</p>
-                <p>Whether she's voicing a tutorial, breathing life into a character, or crafting clear technical copy, Melinda's goal is always to engage, educate, and inspire. Her versatility, creativity, and commitment to quality make her a valuable asset to any project.</p>
+
+            <div class="credential-item">
+                <span class="credential-label">ACX Audiobooks</span>
+                <div class="credential-details">Three published titles on Audible</div>
+                <a href="https://www.acx.com/narrator?p=A1H0NM4FMWVL89" target="_blank" rel="noopener">View ACX Profile →</a>
+            </div>
+
+            <div class="credential-item">
+                <span class="credential-label">Video Game Voice Acting</span>
+                <div class="credential-details">Final Fantasy IX: Memoria Project</div>
+                <a href="https://www.youtube.com/watch?v=BaMiPb6KiWo" target="_blank" rel="noopener">Watch Demo →</a>
+            </div>
+
+            <div class="credential-item">
+                <span class="credential-label">Professional Setup</span>
+                <div class="credential-details">Rode NT-1 5th Edition • Focusrite Scarlett 2i2 • Treated Home Studio</div>
             </div>
         </div>
-    </main>
 
-    <footer class="bg-primary text-white text-center py-3">
-        <p>&copy; 2025 by melinda christie</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="social-box">
+            <div class="social-title">Follow Along</div>
+            <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
+        </div>
+    </div>
 </body>
 </html>

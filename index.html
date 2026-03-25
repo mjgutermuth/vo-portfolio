@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Melinda Christie - Voice Actor - Coming Soon">
+    <meta name="description" content="Melinda Christie - Voice Actor - Warm, cheerful voice for commercial, narration, and character work">
     <title>Melinda Christie - Voice Actor</title>
     <style>
         * {
@@ -187,9 +187,15 @@
             margin-bottom: 20px;
         }
 
-        .instagram-link {
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .instagram-link, .voice123-link {
             display: inline-block;
-            background: #ff1493;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
@@ -198,12 +204,26 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
+        }
+
+        .instagram-link {
+            background: #ff1493;
             border: 3px solid #ff1493;
         }
 
         .instagram-link:hover {
             background: white;
             color: #ff1493;
+        }
+
+        .voice123-link {
+            background: #9370db;
+            border: 3px solid #9370db;
+        }
+
+        .voice123-link:hover {
+            background: white;
+            color: #9370db;
         }
 
         @media (max-width: 768px) {
@@ -246,11 +266,9 @@
             <h1>MELINDA CHRISTIE</h1>
             <p class="tagline">voice artist with a warm, cheerful tone</p>
             
-            <div class="status">🎙️ LAUNCHING EARLY 2026</div>
-            
             <p class="description">
-                Professional voice acting portfolio site coming soon. Currently in training 
-                and preparing professional demos for commercial, narration, and character work.
+                Professional voice actor available for commercial, narration, and character work.
+                Find me on Voice123 or explore the work below.
             </p>
         </div>
 
@@ -299,8 +317,11 @@
         </div>
 
         <div class="social-box">
-            <div class="social-title">Follow Along</div>
-            <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
+            <div class="social-title">Find Me</div>
+            <div class="social-links">
+                <a href="https://voice123.com/voice-actor/melimuth/" target="_blank" rel="noopener" class="voice123-link">Voice123</a>
+                <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
+            </div>
         </div>
     </div>
 </body>

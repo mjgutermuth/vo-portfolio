@@ -65,19 +65,6 @@
             text-transform: lowercase;
         }
 
-        .status {
-            background: #9370db;
-            color: white;
-            padding: 18px 35px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 35px;
-            display: inline-block;
-            border: none;
-        }
-
         .description {
             font-size: 1rem;
             color: #555;
@@ -86,6 +73,48 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .demos-box {
+            background: white;
+            border: 3px solid #ff1493;
+            padding: 45px 40px;
+            margin-bottom: 30px;
+        }
+
+        .demos-title {
+            font-size: 1rem;
+            color: #ff1493;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .demo-section {
+            margin-bottom: 25px;
+        }
+
+        .demo-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .demo-label {
+            font-size: 0.75rem;
+            color: #2e2e2e;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .demo-section iframe {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: 346px;
+            border: none;
+            margin: 0 auto;
         }
 
         .credentials-box {
@@ -157,6 +186,25 @@
             background-color: #fafafa;
         }
 
+        .book-list {
+            margin-top: 8px;
+        }
+
+        .book-entry {
+            margin-bottom: 10px;
+        }
+
+        .book-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .book-author {
+            display: block;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
         .credential-item a {
             color: #ff1493;
             text-decoration: none;
@@ -194,7 +242,7 @@
             flex-wrap: wrap;
         }
 
-        .instagram-link, .voice123-link {
+        .instagram-link, .voice123-link, .acx-link {
             display: inline-block;
             color: white;
             padding: 15px 30px;
@@ -224,6 +272,16 @@
         .voice123-link:hover {
             background: white;
             color: #9370db;
+        }
+
+        .acx-link {
+            background: #20b2aa;
+            border: 3px solid #20b2aa;
+        }
+
+        .acx-link:hover {
+            background: white;
+            color: #20b2aa;
         }
 
         @media (max-width: 768px) {
@@ -272,11 +330,30 @@
             </p>
         </div>
 
+        <div class="demos-box">
+            <div class="demos-title">Demo Reels</div>
+
+            <div class="demo-section">
+                <div class="demo-label">Commercial</div>
+                <iframe src="https://voice123.com/embed.html?demo_id=JKXHKOA&va=melimuth"></iframe>
+            </div>
+
+            <div class="demo-section">
+                <div class="demo-label">Narration</div>
+                <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSJ&va=melimuth"></iframe>
+            </div>
+
+            <div class="demo-section">
+                <div class="demo-label">Character</div>
+                <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSX&va=melimuth"></iframe>
+            </div>
+        </div>
+
         <div class="credentials-box">
-            <div class="credentials-title">Current Work</div>
+            <div class="credentials-title">Credits</div>
             
             <div class="credential-item">
-                <span class="credential-label">Commercial Work</span>
+                <span class="credential-label">Commercials</span>
                 <div class="credential-details">Spotify ads for Babalu podcast</div>
                 
                 <div class="audio-player">
@@ -299,27 +376,36 @@
             </div>
 
             <div class="credential-item">
-                <span class="credential-label">ACX Audiobooks</span>
-                <div class="credential-details">Three published titles on Audible</div>
-                <a href="https://www.acx.com/narrator?p=A1H0NM4FMWVL89" target="_blank" rel="noopener">View ACX Profile →</a>
+                <span class="credential-label">Audiobooks</span>
+                <div class="book-list">
+                    <div class="book-entry">
+                        <a href="https://www.audible.com/pd/B0D1J34BCP" target="_blank" rel="noopener">Starlight and Shadow →</a>
+                        <span class="book-author">by Devin Stevens</span>
+                    </div>
+                    <div class="book-entry">
+                        <a href="https://www.audible.com/pd/B0D48B7G7R" target="_blank" rel="noopener">10-Minute Stories From World Mythology: The Native Americas →</a>
+                        <span class="book-author">by Joy Chester</span>
+                    </div>
+                    <div class="book-entry">
+                        <a href="https://www.audible.com/pd/B0D1DTFQ3L" target="_blank" rel="noopener">90 Days to Love →</a>
+                        <span class="book-author">by Kayla Smith</span>
+                    </div>
+                </div>
             </div>
 
             <div class="credential-item">
-                <span class="credential-label">Video Game Voice Acting</span>
-                <div class="credential-details">Final Fantasy IX: Memoria Project</div>
-                <a href="https://www.youtube.com/watch?v=BaMiPb6KiWo" target="_blank" rel="noopener">Watch Demo →</a>
+                <span class="credential-label">Podcasts</span>
+                <div class="credential-details">Per Aspera Podcast — Newspaper Reporter, S1E2: "The People's House"</div>
+                <a href="https://www.perasperapodcast.com/episodes/s1e2" target="_blank" rel="noopener">Listen →</a>
             </div>
 
-            <div class="credential-item">
-                <span class="credential-label">Professional Setup</span>
-                <div class="credential-details">Rode NT-1 5th Edition • Focusrite Scarlett 2i2 • Treated Home Studio</div>
-            </div>
         </div>
 
         <div class="social-box">
             <div class="social-title">Find Me</div>
             <div class="social-links">
                 <a href="https://voice123.com/voice-actor/melimuth/" target="_blank" rel="noopener" class="voice123-link">Voice123</a>
+                <a href="https://www.acx.com/narrator?p=A1H0NM4FMWVL89" target="_blank" rel="noopener" class="acx-link">ACX</a>
                 <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
             </div>
         </div>

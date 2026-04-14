@@ -4,404 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Melinda Gutermuth - Voice Actor - Warm, cheerful voice for commercial, narration, and character work">
-    <title>Melinda Gutermuth - Voice Actor</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', monospace;
-            background: white;
-            color: #2e2e2e;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .main-box {
-            background: white;
-            border: 3px solid #ff1493;
-            padding: 60px 40px;
-            margin-bottom: 30px;
-        }
-
-        .headshot {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid #ff1493;
-            margin: 0 auto 30px;
-            object-fit: cover;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: #ff1493;
-            margin-bottom: 15px;
-            letter-spacing: -1px;
-            text-transform: uppercase;
-            line-height: 1;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 50px;
-            font-weight: normal;
-            letter-spacing: 0.5px;
-            text-transform: lowercase;
-        }
-
-        .description {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 0;
-            line-height: 1.8;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .demos-box {
-            background: white;
-            border: 3px solid #ff1493;
-            padding: 45px 40px;
-            margin-bottom: 30px;
-        }
-
-        .demos-title {
-            font-size: 1rem;
-            color: #ff1493;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
-
-        .demo-section {
-            margin-bottom: 25px;
-        }
-
-        .demo-section:last-child {
-            margin-bottom: 0;
-        }
-
-        .demo-label {
-            font-size: 0.75rem;
-            color: #2e2e2e;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .demo-section iframe {
-            display: block;
-            width: 100%;
-            max-width: 500px;
-            height: 346px;
-            border: none;
-            margin: 0 auto;
-        }
-
-        .credentials-box {
-            background: white;
-            border: 3px solid #20b2aa;
-            padding: 45px 40px;
-            margin-bottom: 30px;
-        }
-
-        .credentials-title {
-            font-size: 1rem;
-            color: #20b2aa;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
-
-        .credential-item {
-            background: #fafafa;
-            border: 2px solid #e0e0e0;
-            padding: 25px;
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .credential-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .credential-label {
-            color: #2e2e2e;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1.5px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .credential-details {
-            color: #555;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .audio-player {
-            margin: 15px 0;
-            padding: 15px;
-            background: white;
-            border: 2px solid #ff1493;
-        }
-
-        .audio-player-label {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        audio {
-            width: 100%;
-            height: 40px;
-            outline: none;
-        }
-
-        audio::-webkit-media-controls-panel {
-            background-color: #fafafa;
-        }
-
-        .book-list {
-            margin-top: 8px;
-        }
-
-        .book-entry {
-            margin-bottom: 10px;
-        }
-
-        .book-entry:last-child {
-            margin-bottom: 0;
-        }
-
-        .book-author {
-            display: block;
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 2px;
-        }
-
-        .credential-item a {
-            color: #ff1493;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-
-        .credential-item a:hover {
-            text-decoration: underline;
-        }
-
-        .social-box {
-            background: white;
-            border: 3px solid #ff1493;
-            padding: 35px;
-        }
-
-        .social-title {
-            font-size: 1rem;
-            color: #ff1493;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .instagram-link, .voice123-link, .acx-link {
-            display: inline-block;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .instagram-link {
-            background: #ff1493;
-            border: 3px solid #ff1493;
-        }
-
-        .instagram-link:hover {
-            background: white;
-            color: #ff1493;
-        }
-
-        .voice123-link {
-            background: #9370db;
-            border: 3px solid #9370db;
-        }
-
-        .voice123-link:hover {
-            background: white;
-            color: #9370db;
-        }
-
-        .acx-link {
-            background: #20b2aa;
-            border: 3px solid #20b2aa;
-        }
-
-        .acx-link:hover {
-            background: white;
-            color: #20b2aa;
-        }
-
-        @media (max-width: 768px) {
-            .headshot {
-                width: 150px;
-                height: 150px;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .tagline {
-                font-size: 1rem;
-            }
-
-            .main-box {
-                padding: 40px 25px;
-            }
-
-            .credentials-box {
-                padding: 30px 25px;
-            }
-
-            .credential-item {
-                padding: 20px;
-            }
-
-            .social-box {
-                padding: 30px 25px;
-            }
-        }
-    </style>
+    <title>Melinda Gutermuth — Voice Actor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="main-box">
-            <img src="https://vo-portfolio.s3.us-east-2.amazonaws.com/LK1_3046.jpg" alt="Melinda Gutermuth headshot" class="headshot">
-            
-            <h1>MELINDA GUTERMUTH</h1>
-            <p class="tagline">voice artist with a warm, cheerful tone</p>
-            
-            <p class="description">
-                Professional voice actor available for commercial, narration, and character work.
-                Find me on Voice123 or explore the work below.
-            </p>
-        </div>
 
-        <div class="demos-box">
-            <div class="demos-title">Demo Reels</div>
+    <!-- NAV -->
+    <header class="nav">
+        <div class="nav-logo">MELINDA GUTERMUTH</div>
+        <nav>
+            <a href="#demos">Demos</a>
+            <a href="#credits">Credits</a>
+            <a href="#find-me">Find Me</a>
+        </nav>
+    </header>
 
-            <div class="demo-section">
-                <div class="demo-label">Commercial</div>
-                <iframe src="https://voice123.com/embed.html?demo_id=JKXHKOA&va=melimuth"></iframe>
-            </div>
-
-            <div class="demo-section">
-                <div class="demo-label">Narration</div>
-                <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSJ&va=melimuth"></iframe>
-            </div>
-
-            <div class="demo-section">
-                <div class="demo-label">Character</div>
-                <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSX&va=melimuth"></iframe>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">Voice Actor</div>
+            <h1 class="hero-headline">MELINDA<br>GUTERMUTH</h1>
+            <p class="hero-ipa">/məˈlɪndə ˈɡʊdɚmuθ/</p>
+            <p class="hero-sub">Warm, cheerful voice for commercial, narration, and character work. Find me on Voice123 or explore the work below.</p>
+            <div class="hero-ctas">
+                <a href="#demos" class="btn btn-primary">Hear My Demos</a>
+                <a href="https://voice123.com/voice-actor/melimuth/" target="_blank" rel="noopener" class="btn btn-secondary">Voice123 Profile</a>
             </div>
         </div>
+        <div class="hero-headshot">
+            <img src="https://vo-portfolio.s3.us-east-2.amazonaws.com/LK1_3046.jpg" alt="Melinda Gutermuth headshot">
+        </div>
+    </section>
 
-        <div class="credentials-box">
-            <div class="credentials-title">Credits</div>
-            
-            <div class="credential-item">
-                <span class="credential-label">Commercials</span>
-                <div class="credential-details">Spotify ads for Babalu podcast</div>
-                
-                <div class="audio-player">
-                    <div class="audio-player-label">Ad Version 1</div>
-                    <audio controls>
-                        <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+    <!-- DEMOS -->
+    <section class="section" id="demos">
+        <div class="container">
+            <div class="section-label">Listen</div>
+            <h2 class="section-title">Demo Reels</h2>
+            <div class="demos-grid">
+                <div class="demo-card card-magenta">
+                    <h3>Commercial</h3>
+                    <iframe src="https://voice123.com/embed.html?demo_id=JKXHKOA&va=melimuth" title="Commercial demo reel"></iframe>
                 </div>
-
-                <div class="audio-player">
-                    <div class="audio-player-label">Ad Version 2</div>
-                    <audio controls>
-                        <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO+v2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="demo-card card-teal">
+                    <h3>Narration</h3>
+                    <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSJ&va=melimuth" title="Narration demo reel"></iframe>
                 </div>
-
-                <a href="https://www.uneasytiger.com/projects/babalu" target="_blank" rel="noopener">About Babalu Podcast →</a>
-            </div>
-
-            <div class="credential-item">
-                <span class="credential-label">Audiobooks</span>
-                <div class="book-list">
-                    <div class="book-entry">
-                        <a href="https://www.audible.com/pd/B0D1J34BCP" target="_blank" rel="noopener">Starlight and Shadow →</a>
-                        <span class="book-author">by Devin Stevens</span>
-                    </div>
-                    <div class="book-entry">
-                        <a href="https://www.audible.com/pd/B0D48B7G7R" target="_blank" rel="noopener">10-Minute Stories From World Mythology: The Native Americas →</a>
-                        <span class="book-author">by Joy Chester</span>
-                    </div>
-                    <div class="book-entry">
-                        <a href="https://www.audible.com/pd/B0D1DTFQ3L" target="_blank" rel="noopener">90 Days to Love →</a>
-                        <span class="book-author">by Kayla Smith</span>
-                    </div>
+                <div class="demo-card card-purple">
+                    <h3>Character</h3>
+                    <iframe src="https://voice123.com/embed.html?demo_id=JKXHSSX&va=melimuth" title="Character demo reel"></iframe>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="social-box">
-            <div class="social-title">Find Me</div>
-            <div class="social-links">
-                <a href="https://voice123.com/voice-actor/melimuth/" target="_blank" rel="noopener" class="voice123-link">Voice123</a>
-                <a href="https://www.acx.com/narrator?p=A1H0NM4FMWVL89" target="_blank" rel="noopener" class="acx-link">ACX</a>
-                <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
+    <!-- CREDITS -->
+    <section class="section" id="credits">
+        <div class="container">
+            <div class="section-label">Work</div>
+            <h2 class="section-title">Credits</h2>
+
+            <div class="credit-group">
+                <div class="credit-category">Commercials</div>
+                <div class="credit-card">
+                    <p class="credit-desc">Spotify ads for Babalu podcast</p>
+
+                    <div class="audio-player">
+                        <div class="audio-label">Ad Version 1</div>
+                        <audio controls>
+                            <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="audio-player">
+                        <div class="audio-label">Ad Version 2</div>
+                        <audio controls>
+                            <source src="https://vo-portfolio.s3.us-east-2.amazonaws.com/Babalu+Spotify+Ad+VO+v2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <a href="https://www.uneasytiger.com/projects/babalu" target="_blank" rel="noopener" class="credit-link">About Babalu Podcast →</a>
+                </div>
+            </div>
+
+            <div class="credit-group">
+                <div class="credit-category">Audiobooks</div>
+                <div class="credit-card">
+                    <div class="book-list">
+                        <div class="book-entry">
+                            <a href="https://www.audible.com/pd/B0D1J34BCP" target="_blank" rel="noopener" class="credit-link">Starlight and Shadow →</a>
+                            <span class="book-author">by Devin Stevens</span>
+                        </div>
+                        <div class="book-entry">
+                            <a href="https://www.audible.com/pd/B0D48B7G7R" target="_blank" rel="noopener" class="credit-link">10-Minute Stories From World Mythology: The Native Americas →</a>
+                            <span class="book-author">by Joy Chester</span>
+                        </div>
+                        <div class="book-entry">
+                            <a href="https://www.audible.com/pd/B0D1DTFQ3L" target="_blank" rel="noopener" class="credit-link">90 Days to Love →</a>
+                            <span class="book-author">by Kayla Smith</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- FIND ME -->
+    <section class="section" id="find-me">
+        <div class="container">
+            <div class="section-label">Connect</div>
+            <h2 class="section-title">Find Me</h2>
+            <div class="find-me-links">
+                <a href="https://voice123.com/voice-actor/melimuth/" target="_blank" rel="noopener" class="btn btn-primary">Voice123</a>
+                <a href="https://www.acx.com/narrator?p=A1H0NM4FMWVL89" target="_blank" rel="noopener" class="btn btn-secondary">ACX</a>
+                <a href="https://instagram.com/melimuth" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-name">MELINDA GUTERMUTH</div>
+                <div class="footer-copy">Voice Actor</div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

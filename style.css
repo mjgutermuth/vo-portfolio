@@ -341,6 +341,18 @@ strong { font-weight: 700; }
   margin-bottom: 1.25rem;
 }
 
+.video-embed {
+  margin-bottom: 0.75rem;
+}
+
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+}
+
 .audio-player {
   margin-bottom: 0.75rem;
   padding: 0.9rem 1.25rem;

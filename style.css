@@ -335,6 +335,10 @@ strong { font-weight: 700; }
   border-left: 4px solid var(--teal);
 }
 
+.credit-card-secondary {
+  margin-top: 1.25rem;
+}
+
 .credit-desc {
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -404,6 +408,18 @@ audio::-webkit-media-controls-panel {
 .book-author {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.book-title {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.book-status {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* ---- FIND ME ---- */
